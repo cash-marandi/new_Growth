@@ -30,7 +30,7 @@ const Footer = () => {
         {/* Div 4: Call to Action */}
         <div className="flex flex-col items-center md:items-start">
           <h2 className="text-lg  text-secondary font-bold font-bebas-neue mb-4">Get in Touch</h2>
-          <p className="leading-none text-card ">Contact us today for expert accounting</p>
+          <p className="leading-none text-card ">Contact us today for expert accounting services</p>
         </div>
       </div>
     </footer>
