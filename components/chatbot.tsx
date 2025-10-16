@@ -12,7 +12,7 @@ const N8nChatbot = () => {
 
     script.onload = () => {
       (window as any).Chatbot.init({
-        "n8nChatUrl": process.env.NEXT_PUBLIC_N8N_CHAT_URL || "",
+        "n8nChatUrl": "https://ai.livelonke.co.za/webhook/56149ecc-cad8-4b1b-ba17-569ea865d7d3/chat" || "",
         "metadata": {}, // Include any custom data to send with each message to your n8n workflow
         "theme": {
           "button": {
