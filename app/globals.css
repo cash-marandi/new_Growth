@@ -1,5 +1,7 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -194,6 +196,12 @@ body {
   --shadow-2xl: var(--shadow-2xl);
 }
 
+.font-playfair-display {
+  font-family: 'Playfair Display', serif;
+}
+.font-bebas-neue {
+  font-family: 'Bebas Neue', sans-serif !important;
+}
 
 .force-padding-margin {
   padding: 20px;
@@ -204,34 +212,12 @@ body {
   margin: 20px !important;
 }
 
-.font-bebas-neue {
-  font-family: 'Bebas Neue', sans-serif !important;
-}
+
 
 .about-card-no-shadow {
   box-shadow: none !important;
 }
 
-.about-section-margin-y {
-  padding-top: 160px !important; /* 40 * 4px = 160px */
-  padding-bottom: 160px !important;
-  padding-left: 80px;
-  padding-right: 80px;
-}
-
-.about-text-lg-bold {
-  font-size: 1.425rem !important; /* text-lg */
-  font-weight: 300 !important; /* font-bold */
-}
-
-.about-text-4xl-bold {
-  margin: 2.6rem;
-  font-size: 2.95rem !important; /* text-4xl */
-  font-weight: 300 !important; /* font-bold */
-}
-.about-text-container {
-  max-width: 20.9rem;
-}
 .service-card-width {
   padding: 1rem;
   margin: 0.5rem;
@@ -271,9 +257,7 @@ body {
   gap: 1rem;
 }
 
-.font-playfair-display {
-  font-family: 'Playfair Display', serif;
-}
+
 .no-underline {
   text-decoration: none;
   
@@ -281,4 +265,11 @@ body {
 .why-text-lg-bold {
   font-size: 1.5rem;
   font-weight: 500;
+}
+.bgcolor {
+    background-color: rgb(58, 91, 160);
+    color: rgb(58, 91, 160);
+}
+.font-oswald {
+  font-family: 'Oswald', sans-serif;
 }

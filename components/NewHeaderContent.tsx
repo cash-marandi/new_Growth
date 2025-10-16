@@ -2,13 +2,7 @@
 import Link from 'next/link';
 import { gsap } from 'gsap';
 
-interface NewHeaderContentProps {
-  isOpen: boolean;
-  toggleMenu: () => void;
-  bebasNeueClassName: string;
-}
-
-const NewHeaderContent = ({ isOpen, toggleMenu, bebasNeueClassName }: NewHeaderContentProps) => {
+const NewHeaderContent = ({ isOpen, toggleMenu }: { isOpen: boolean; toggleMenu: () => void; }) => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 flex justify-between items-center text-invert">

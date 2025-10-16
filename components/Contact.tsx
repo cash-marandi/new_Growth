@@ -45,30 +45,30 @@ const Contact = () => {
 
   return (
     <AnimationWrapper>
-      <section id="contact" className="py-20 min-h-screen about-section-margin-y flex items-center bg-gray-800 text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto mb-12">
-            <h2 className=" text-primary font-bebas-neue text-[3.5rem] font-bold">Why Choose Us</h2>
+      <section id="contact" className="p-10 md:p-20 min-h-screen about-section-margin-y flex items-center bg-gray-800 text-white">
+        <div className="container mx-auto">
+          <div className="mx-auto mb-12">
+            <h2 className=" text-primary font-bebas-neue text-7xl text-orange-300 font-left">Why Choose Us</h2>
             
           </div>
          
-          <div className="grid grid-cols-2 h-full w-full md:grid-cols-2 gap-8">
-            <Card className="bg-primary h-[24rem] p-[10] m-[10] border-primary">
+          <div className="grid grid-cols-1 h-full w-full md:grid-cols-1 lg:grid-cols-2 gap-8">
+            <Card className="bg-slate-900  border border-orange-300">
               <CardHeader>
-                <CardTitle className="text-[3.4rem] text-foreground m-[5]">DROP US A LINE!</CardTitle>
+                <CardTitle className="text-5xl text-foreground m-1">DROP US A LINE!</CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit}>
-                  <div className="mx-[5] my-[10]">
-                    <Input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} className="bg-card text-foreground p-[4] border-foreground" />
+                  <div className="mx-2 my-2"> 
+                    <Input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} className="bg-card text-foreground p-2 border-foreground" />
                   </div>
-                  <div className="mx-[5] my-[10]">
-                    <Input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} className="bg-card text-foreground p-[4] border-foreground" />
+                  <div className="mx-2 my-2">
+                    <Input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} className="bg-card text-foreground p-2 border-foreground" />
                   </div>
-                  <div className="mx-[5] my-[10]">
-                    <Textarea placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)} className="bg-card h-[100] text-foreground p-[4] border-foreground" />
+                  <div className="mx-2 my-2">
+                    <Textarea placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)} className="bg-card h-40 text-foreground p-2 border-foreground" />
                   </div>
-                  <Button type="submit" className='m-[5] p-[5] w-[4rem] bg-secondary hover:bg-card text-foreground' disabled={status === 'submitting'}>
+                  <Button type="submit" className='m-2 p-2 w-20 bg-secondary hover:bg-card text-foreground' disabled={status === 'submitting'}>
                     {status === 'submitting' ? 'Sending...' : 'Send'}
                   </Button>
                   {status === 'submitted' && <p className="text-green-500 mt-4">Message sent successfully!</p>}
@@ -76,7 +76,7 @@ const Contact = () => {
                 </form>
               </CardContent>
             </Card>
-            <div className="relative h-full">
+            <div className="relative mt-5 h-full">
               <div className="social-icons-container">
                 <Link href="#" className="text-lg text-primary hover:text-primary transition-colors"><FaFacebook size={24} /></Link>
                 <Link href="#" className="text-lg text-primary hover:text-primary transition-colors"><FaInstagram size={24} /></Link>

@@ -5,11 +5,7 @@ import { gsap } from 'gsap';
 import NewHeaderDisplay from './NewHeaderContent';
 import MenuOverlay from './MenuOverlay';
 
-interface NewHeaderProps {
-  bebasNeueClassName: string;
-}
-
-const NewHeader = ({ bebasNeueClassName }: NewHeaderProps) => {
+const NewHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -38,7 +34,7 @@ const NewHeader = ({ bebasNeueClassName }: NewHeaderProps) => {
 
   return (
     <>
-      <NewHeaderDisplay isOpen={isOpen} toggleMenu={toggleMenu} bebasNeueClassName={bebasNeueClassName} />
+      <NewHeaderDisplay isOpen={isOpen} toggleMenu={toggleMenu} />
       <MenuOverlay isOpen={isOpen} toggleMenu={toggleMenu} />
     </>
   );

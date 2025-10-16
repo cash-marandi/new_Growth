@@ -120,7 +120,7 @@ const MenuOverlay = ({ isOpen, toggleMenu }: MenuOverlayProps) => {
   };
 
   return (
-    <div ref={overlayRef} className="fixed top-0 left-0 w-full h-screen bg-primary z-40" style={{ clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)' }}>
+    <div ref={overlayRef} className="fixed top-0 left-0 w-full h-screen bg-orange-300 z-40" style={{ clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)' }}>
              <div ref={contentRef} className="relative w-full h-full flex items-center justify-center opacity-0" style={{ transformOrigin: 'bottom left', scale: 0.9, transform: 'rotate(-10deg)' }}>        <div className="w-full max-w-6xl mx-auto flex gap-8">
           <div className="flex-[3] flex flex-col justify-center items-center">
             <div className="w-1/3 h-32 bg-gray-800 overflow-hidden">

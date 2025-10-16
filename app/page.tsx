@@ -15,16 +15,12 @@ import PricingPlans from '../components/PricingPlans';
 import Testimonials from '../components/Testimonials';
 
 
-interface HomeProps {
-  bebasNeueClassName: string;
-}
-
-export default function Home({ bebasNeueClassName }: HomeProps) {
+export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <main className="h-full">
-      <NewHeader bebasNeueClassName={bebasNeueClassName} />
+      <NewHeader />
       <MainContent isOpen={isOpen}>
         <Hero />
         <About />

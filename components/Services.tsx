@@ -64,28 +64,28 @@ const Services = () => {
 
   return (
     <AnimationWrapper>
-      <section id="services" className="py-20 min-h-screen flex about-section-margin-y items-center bg-foreground text-foreground">
+      <section id="services" className="py-20 m-10 min-h-screen flex items-center bg-foreground text-foreground">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <h1 className="text-[3.5rem] font-bold font-bebas-neue text-left text-card">OUR SERVICES</h1>
+          <div className=" mx-auto mb-12">
+            <h1 className=" text-5xl md:text-7xl mb-20 font-bebas-neue text-left text-orange-300">OUR SERVICES</h1>
           </div>
           <div className="relative w-full">
-            <div ref={carouselRef} className="flex overflow-hidden gap-8">
+            <div ref={carouselRef} className="flex overflow-hidden border border-orange-300 rounded-full gap-8">
               {services.map((service, index) => (
-                <Card key={index} className="bg-primary mt-10 relative rounded-full w-full h-full service-card-width border-gray-700 group shadow-lg hover:shadow-xl hover:shadow-primary flex-shrink-0">
-                  <CardContent className="flex flex-col justify-center items-center h-full text-center">
-                    <CardTitle className="text-[2rem] text-secondary service-title font-playfair-display font-bold z-10 group-hover:hidden">{service.title}</CardTitle>
-                    <p className="text-card text-[1.5rem] z-10 hidden font-playfair-display text-shadow-custom group-hover:block">{service.description}</p>
+                <Card key={index} className="bg-primary mt-10 relative border border-orange-300 rounded-full w-full h-full service-card-width  group shadow-lg hover:shadow-xl hover:shadow-primary flex-shrink-0">
+                  <CardContent className="flex flex-col justify-center border rounded-full items-center h-full text-center">
+                    <CardTitle className="text-4xl text-secondary service-title font-playfair-display font-bold z-10 group-hover:hidden">{service.title}</CardTitle>
+                    <p className="text-card text-2xl z-10 hidden font-playfair-display text-shadow-custom group-hover:block">{service.description}</p>
                     <img src={service.image} alt={service.title} className="opacity-0 rounded-full group-hover:opacity-100 group-hover:blur-sm absolute inset-0 w-full h-full object-cover transition-opacity duration-300" />
                   </CardContent>
                 </Card>
               ))}
             </div>
-            <div className="absolute mt-[40] left-1/2 transform -translate-x-1/2 flex gap-4 z-10">
-              <button onClick={handlePrev} className="bg-secondary p-[5] text-foreground m-[5] w-[35] h-[35] rounded-full">
+            <div className="absolute mt-20 left-1/2 transform -translate-x-1/2 flex gap-4 z-10">
+              <button onClick={handlePrev} className=" border border-orange-300 p-2 text-foreground rounded-full">
                 <FaArrowLeft />
               </button>
-              <button onClick={handleNext} className="bg-secondary p-[5] text-foreground m-[5] w-[35] h-[35] rounded-full">
+              <button onClick={handleNext} className="border border-orange-300 p-2 text-foreground rounded-full">
                 <FaArrowRight />
               </button>
             </div>

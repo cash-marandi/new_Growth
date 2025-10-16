@@ -5,6 +5,7 @@ import React, { useEffect } from 'react';
 import { Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import Lenis from 'lenis';
+import N8nChatbot from '../components/chatbot';
 
 const bebasNeue = Bebas_Neue({ subsets: ['latin'], weight: ['400'] });
 
@@ -31,7 +32,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body className="h-full">
-        {React.cloneElement(children as React.ReactElement<{ bebasNeueClassName: string }>, { bebasNeueClassName: bebasNeue.className })}
+        {children}
+        <N8nChatbot />
       </body>
     </html>
   );
