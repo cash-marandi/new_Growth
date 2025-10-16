@@ -38,7 +38,7 @@ const N8nChatbot = () => {
             "title": "N8N Chat UI Bot",
             "titleAvatarSrc": "https://www.svgrepo.com/show/339963/chat-bot.svg",
             "avatarSize": 40,
-            "welcomeMessage": "Hello! Welcome to Growth Assist, how can we help you?",
+            "welcomeMessage": "Hello! Welcome to Growth Assist. How can we help you?",
             "errorMessage": "Please connect me to ai ", // Conecting to n8n
             "backgroundColor": "#ffffff",
             "height": 600,
