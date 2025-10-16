@@ -12,7 +12,7 @@ const N8nChatbot = () => {
 
     script.onload = () => {
       (window as any).Chatbot.init({
-        "n8nChatUrl": "https://ai.livelonke.co.za/webhook/56149ecc-cad8-4b1b-ba17-569ea865d7d3/chat" || "",
+        "n8nChatUrl": process.env.NEXT_PUBLIC_N8N_CHAT_URL || "",
         "metadata": {}, // Include any custom data to send with each message to your n8n workflow
         "theme": {
           "button": {
@@ -38,7 +38,7 @@ const N8nChatbot = () => {
             "title": "N8N Chat UI Bot",
             "titleAvatarSrc": "https://www.svgrepo.com/show/339963/chat-bot.svg",
             "avatarSize": 40,
-            "welcomeMessage": "Hello! Welcome to Growth Assist. How can we help you?",
+            "welcomeMessage": "Hello! Welcome to Growth Assist, how can we help you?",
             "errorMessage": "Please connect me to ai ", // Conecting to n8n
             "backgroundColor": "#ffffff",
             "height": 600,
